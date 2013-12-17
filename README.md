@@ -1,5 +1,7 @@
 # Guss Utilities: rem
 
+Part of the [Guss](https://github.com/guardian/guss) collection.
+
 ## Installation
 
 ```

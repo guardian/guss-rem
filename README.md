@@ -2,6 +2,10 @@
 
 Part of the [Guss](https://github.com/guardian/guss) collection.
 
+## Requirements
+
+- Sass 3.3.0 or higher
+
 ## Installation
 
 ```

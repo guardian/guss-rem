@@ -4,5 +4,8 @@
   "main": "_rem.scss",
   "ignore": [
     "CHANGELOG.md"
-  ]
+  ],
+  "devDependencies": {
+    "bootcamp": "~1.1.4"
+  }
 }

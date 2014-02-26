@@ -1,0 +1,24 @@
+@include describe("Remify") {
+    @include it("should convert pixel values into rems") {
+        @include should( expect( rem(10px) ), to( equal(1rem) ) );
+    }
+    @include it("should keep non-pixel values as they are") {
+        @include should( expect( rem(10vh) ), to( equal(10vh) ) );
+    }
+    @include it("should simplify values that do not need a unit") {
+        @include should( expect( rem(0px) ), to( equal(0) ) );
+    }
+    @include it("should convert multiple values") {
+        @include should( expect( rem(10px 20px 0 0px 3vh 55px) ), to( equal(1rem 2rem 0 0 3vh 5.5rem) ) );
+    }
+    @include it("should keep keywords in the output") {
+        @include should( expect( rem(10px solid white) ), to( equal(1rem solid white) ) );
+    }
+    @include it("should honour important declarations") {
+        @include should( expect( rem(10px !important) ), to( contain("!important") ) );
+    }
+    @include it("should honour a different rem scale") {
+        $guss-rem-baseline: 20px !global;
+        @include should( expect( rem(10px) ), to( equal(.5rem) ) );
+    }
+}

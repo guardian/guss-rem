@@ -1,7 +1,7 @@
 $guss-rem-baseline: 10px !default;
 
 // Transform a value into rem
-// Assuming baseline is set to 10px on :root/html
+// Assuming baseline is set to 10px on :root or html
 @function rem($value, $baseline: $guss-rem-baseline) {
     @if $value == 0 { @return 0; } // 0rem -> 0
     @if type-of($value) == list {
@@ -14,6 +14,7 @@ $guss-rem-baseline: 10px !default;
         @return if(type-of($value) == number and unit($value) == px, $value / $baseline * 1rem, $value);
     }
 }
+
 
 // Output rem units with px fallback
 // Expects $properties to be a Sass map

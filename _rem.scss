@@ -7,7 +7,7 @@ $guss-rem-baseline: 10px !default;
     @if type-of($value) == list {
         $result: ();
         @each $e in $value {
-            $result: append($result, rem($e));
+            $result: append($result, rem($e, $baseline));
         }
         @return $result;
     } @else {

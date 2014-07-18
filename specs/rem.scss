@@ -21,4 +21,8 @@
         $guss-rem-baseline: 20px !global;
         @include should( expect( rem(10px) ), to( equal(.5rem) ) );
     }
+    @include it("should honour a different rem scale when passed as a parameter") {
+        @include should( expect( rem(10px, 20px) ), to( equal(.5rem) ) );
+        @include should( expect( rem(10px 20px, 20px) ), to( equal(.5rem 1rem) ) );
+    }
 }

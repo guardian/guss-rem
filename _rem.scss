@@ -18,7 +18,7 @@ $guss-rem-baseline: 10px !default;
  */
 @function rem($value, $baseline: $guss-rem-baseline) {
     @if $value == 0 {
-      @return 0; // 0rem -> 0
+        @return 0; // 0rem -> 0
     } 
     
     @if type-of($value) == list {

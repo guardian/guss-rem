@@ -7,7 +7,6 @@ $guss-rem-baseline: 10px !default;
 
 /**
  * Transform a value into rem.
- * Assuming baseline is set to `10px` on `:root` or `html`.
  *
  * @param {Number} $value
  * @param {Number} $baseline ($guss-rem-baseline)
@@ -29,9 +28,7 @@ $guss-rem-baseline: 10px !default;
         }
 
         @return $result;
-    } 
-
-    @else {
+    } @else {
         @return if(type-of($value) == number and unit($value) == px, $value / $baseline * 1rem, $value);
     }
 }

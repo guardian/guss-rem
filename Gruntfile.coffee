@@ -4,7 +4,6 @@ module.exports = (grunt) ->
 
   # Modules
   grunt.loadNpmTasks 'grunt-contrib-sass'
-  grunt.loadNpmTasks 'grunt-contrib-watch'
 
   # Grunt Tasks
   grunt.initConfig

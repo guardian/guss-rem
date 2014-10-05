@@ -3,9 +3,9 @@
   "main": "_rem.scss",
   "ignore": [
     "specs",
-    "tests.scss"
-  ],
-  "devDependencies": {
-    "bootcamp": "~1.1.6"
-  }
+    "tests.scss",
+    "sache.json",
+    "Gruntfile.coffee",
+    "package.json"
+  ]
 }

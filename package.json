@@ -1,0 +1,50 @@
+{
+  "name": "guss-rem",
+  "version": "1.2.0",
+  "description": "Transforms any pixel value and group of properties into their equivalent in rem units with a pixel fallback",
+  "keywords": [
+    "sass",
+    "scss",
+    "rem",
+    "responsive",
+    "rwd"
+  ],
+  "homepage": "https://github.com/guardian/guss-rem",
+  "bugs": "https://github.com/guardian/guss-rem/issues",
+  "author": {
+    "name": "Guardian News & Media",
+    "url": "https://github.com/guardian"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/guardian/guss-rem.git"
+  },
+  "main": "_rem.scss",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "files": [
+    "specs/"
+  ],
+  "bin": {},
+  "devDependencies": {
+    "bootcamp": "^1.1.7",
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "peerDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.8.1"
+  },
+  "engines": {
+    "node": ">=0.10.32",
+    "npm": ">=2.0.2"
+  },
+  "licenses": [
+    {
+      "type": "Apache 2.0",
+      "url": "https://github.com/guardian/guss-rem/blob/master/LICENSE"
+    }
+  ]
+}

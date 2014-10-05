@@ -69,6 +69,7 @@ Install the test dependencies:
 
 ```bash
 $ npm install
+$ npm install -g grunt-cli
 ```
 
 Run the tests (specs are located in specs/rem.scss):

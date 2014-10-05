@@ -1,5 +1,7 @@
 # Guss Utilities: rem
 
+[![Build Status](https://travis-ci.org/kaelig/guss-rem.svg?branch=master)](https://travis-ci.org/kaelig/guss-rem)
+
 Part of the [Guss](https://github.com/guardian/guss) collection.
 
 ## Requirements
@@ -66,13 +68,14 @@ Outputs:
 Install the test dependencies:
 
 ```bash
-$ bower install
+$ npm install
+$ npm install -g grunt-cli
 ```
 
 Run the tests (specs are located in specs/rem.scss):
 
 ```bash
-$ sass tests.scss -I './bower_components/bootcamp/dist'
+$ grunt test
 ```
 
 Make sure tests pass before you commit any changes.

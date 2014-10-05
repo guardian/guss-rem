@@ -1,6 +1,5 @@
 {
   "name": "guss-rem",
-  "version": "1.2.0",
   "description": "Transforms any pixel value and group of properties into their equivalent in rem units with a pixel fallback",
   "keywords": [
     "sass",

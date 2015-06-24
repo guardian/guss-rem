@@ -1,5 +1,22 @@
 # Guss Utilities: rem
 
+----
+
+Disclaimer: using this utility adds a lot of code to source Sass files,
+to perform something that can be easily automated.
+
+**Do not use it unless you don't have any other choice.**
+
+Please use a post-processing task to transform pixels into rems at build time.
+For example, using one of these packages:
+
+- [node-pixrem](https://www.npmjs.com/package/pixrem)
+- [node-px2rem](https://www.npmjs.com/package/node-px2rem)
+- [gulp-px2rem](https://www.npmjs.com/package/gulp-px2rem)
+- [grunt-px2rem](https://www.npmjs.com/package/grunt-px2rem)
+
+----
+
 Part of the [Guss](https://github.com/guardian/guss) collection.
 
 ## Requirements

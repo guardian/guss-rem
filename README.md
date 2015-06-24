@@ -10,7 +10,8 @@ to perform something that can be easily automated.
 Please use a post-processing task to transform pixels into rems at build time.
 For example, using one of these packages:
 
-- [node-px2rem](https://github.com/ggkovacs/node-px2rem)
+- [node-pixrem](https://www.npmjs.com/package/pixrem)
+- [node-px2rem](https://www.npmjs.com/package/node-px2rem)
 - [gulp-px2rem](https://www.npmjs.com/package/gulp-px2rem)
 - [grunt-px2rem](https://www.npmjs.com/package/grunt-px2rem)
 
